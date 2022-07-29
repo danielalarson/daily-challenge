@@ -32,4 +32,3 @@ function findTwoSumDualForBruteForce(array $array, $testValue)
 }
 
 \DataOutput\Execution::execute('findTwoSumDualForBruteForce', $arr, $val);
-\DataOutput\Execution::execute('findTwoSumDualForBruteForce', $arr, $val);
