@@ -5,10 +5,13 @@
  * Bonus: Can you do this in one pass?
  */
 
-$arr = [10, 15, 12, 7];
-$val = 17;
+// Calls our autoloader
+include __DIR__ . '/startup/autoloader.php';
 
-function findTwoSumDualFor(array $array, $testValue)
+$arr = [10, 15, 12, 7];
+$val = 30;
+
+function findTwoSumDualForBruteForce(array $array, $testValue)
 {
     $array_member_count = count($array);
     if(!is_numeric($testValue))
@@ -21,7 +24,6 @@ function findTwoSumDualFor(array $array, $testValue)
 
             if($firstIndex + $secondIndex === $testValue) {
                 return true;
-                break 2;
             }
         }
     }
@@ -29,4 +31,5 @@ function findTwoSumDualFor(array $array, $testValue)
     return false;
 }
 
-var_dump(findTwoSumDualFor($arr, $val));
+\DataOutput\Execution::execute('findTwoSumDualForBruteForce', $arr, $val);
+\DataOutput\Execution::execute('findTwoSumDualForBruteForce', $arr, $val);
